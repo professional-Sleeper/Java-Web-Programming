@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conatcts>
+	<person>
+		<name>홍길동</name>
+		<age>23</age>
+	</person>
+	<person>
+		<name>김아무개</name>
+		<age>35</age>
+	</person>
+</conatcts>
