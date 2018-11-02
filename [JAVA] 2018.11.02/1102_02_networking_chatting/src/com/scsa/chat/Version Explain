@@ -1,0 +1,44 @@
+//////////////////////////
+
+Step 1
+
+Client only send message.
+Server only receive that.
+
+Server is waitting until client try connection to Server.
+If they are connected, client send pre-saved message.
+Server receive that, and print on screen.
+
+//////////////////////////
+
+Step 2 - skip
+
+//////////////////////////
+
+Step 3
+
+Client can write message through Keyboard.
+Server reacts client's message.
+
+After client's message is sent, client can recieve same message that client send.
+
+///////////////////////////
+
+Step 4 - skip. same the 3
+
+/////////////////////////
+
+Step 5
+
+1 Server to Many Clients.
+Clients can see other Cleints's message. they share ServerSocket through Thread.
+
+Until now, Can chat only 1 Server to 1 Client.
+But By Using Thread, Clients can separate their functions (send, receive message).
+
+Server
+two function. main Thread wait for Client's connect. 
+when someone connect Server, Server make one thread that can recieve message anytime.
+
+Client
+two funcion. Wait for User's input, other's message
