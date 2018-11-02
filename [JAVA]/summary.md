@@ -12,3 +12,4 @@ DOM (Document Object Model )
 1. faster than SAX
 2. make document filled Node Tree
 3. can search using Tag, Attr, Element (Name, Type)... and so on.
+
