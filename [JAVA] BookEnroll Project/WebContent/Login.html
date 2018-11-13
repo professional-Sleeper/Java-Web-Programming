@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.title {
+	text-align: center;
+	height: 50px;
+	background-color: grey;
+}
+
+.label {
+	text-align: right;
+	height: 50px;
+}
+</style>
+</head>
+<body>
+	<form action = "./login.do" method=get>
+		<table border="1" width="600px">
+			<tr>
+				<td colspan="2" class=title>로 그 인</td>
+			</tr>
+			<tr>
+				<td class = label>아이디 &nbsp;</td>
+				<td> &nbsp; <input type="text" name = "id"/></td>
+			</tr>
+			<tr>
+				<td class = label>비밀번호  &nbsp;</td>
+				<td> &nbsp; <input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" class = title> 
+					<input type = "submit" value="로그인"/>
+					<input type = "reset" value="취소"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
