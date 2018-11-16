@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="1115_01_mvc_dao">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="1115_01_mvc_dao"/>
+        <property name="java-output-path" value="/1115_01_mvc_dao/build/classes"/>
+    </wb-module>
+</project-modules>
