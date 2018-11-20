@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form enctype="application/x-www-form-urlencoded">
+	<form enctype="multiport/form-data" method="post"></form>
+	<fieldset>
+	<legend>필수 입력 요소</legend>
+	<label for="urlBox">url : </label>
+	<input id="urlBox" type="url" name="url" required="required" autofocus="autofocus"/><br/>
+		color : <input type = "color" name = "color"/> <br/>
+		date : <input type = "date" name = "date"/> <br/>
+		datetime-local : <input type = "datetime-local" name = "datetime"/> <br/>
+		week : <input type = "week" name = "week"/> <br/>
+		month : <input type = "month" name = "month"/> <br/>
+	</fieldset>
+	<fieldset>
+	<legend>선택 입력 요소</legend>
+		search : <input type = "search" name="search"/> <br/>
+		time : <input type = "time" name = "time"/> <br/>
+		number : <input type = "number" name = "number" min="10" max="20" step = "2"/> <br/>
+		range : <input type = "range" name = "range" min="10" max="20"/> <br/>
+		tel : <input type = "tel" name = "tel"/> <br/>
+		email : <input type = "email" name = "email"/> <br/>
+		browser : <input type="text" list="browsers" name="browser">
+			<datalist id="browsers">
+			  <option value="Internet Explorer">
+			  <option value="Firefox">
+			  <option value="Chrome">
+			  <option value="Opera">
+			  <option value="Safari">
+			</datalist>
+		<input type = "submit" value = "제출"/>
+	</fieldset>
+	</form>
+</body>
+</html>
