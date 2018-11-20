@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<header>
+	<h1>영화 예매</h1>
+	</header>
+	<h2>쿵푸팬더</h2>
+	<input type="image" src="./img/movie_image2.jpg"><br/>
+	<span>상영관
+	<select>
+		<option selected>CGV</option>
+		<option>롯데시네마</option>
+		<option>메가박스</option>	
+	</select>
+	</span>
+	<span>날짜 선택<input type="date" name="date"></span>
+	
+	
+	<fieldset>
+  	<legend>시간선택</legend>
+  	<input type="radio" name="movietime" value="08:30" > 08:30
+  	<input type="radio" name="movietime" value="11:00" > 11:00
+  	<input type="radio" name="movietime" value="14:20" > 14:20
+  	<input type="radio" name="movietime" value="17:25" > 17:25
+  	<input type="radio" name="movietime" value="20:10" > 20:10
+  	<input type="radio" name="movietime" value="23:05" > 23:05
+  </fieldset>
+	<h3>요금  <del><small>\9,000</small></del>&nbsp;<ins>\5,000</ins></h3> 
+	<h3>인원 <input type="text"/></h3> 
+	<h3>금액 <input type="text"/></h3> 
+	
+	<fieldset>
+	<legend>옵션</legend>
+	<input type="checkbox" name="option" value="popcorn">팝콘
+	<input type="checkbox" name="option" value="coke">콜라
+	<hr/>	
+	<input type="submit" value="예매">
+	<input type="reset" value="취소">
+	
+	</fieldset>
+</form>
+</body>
+</html>
