@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function Person(name,age) {
+		this.name = name;
+		this.age = age;
+		this.increaseAge = function(){
+			this.age++;
+		}
+	}
+	
+	var person = new Person("김재환",23);
+	
+	console.log(person.name);
+	console.log(person.age);
+	person.increaseAge();
+	console.log(person.age);
+	
+	person.tel = "010-1111-1111";
+	console.log(person.tel);
+	
+	delete(person.age);
+	console.log(person.age);
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var myVar = "전역변수";
+	
+	function Myfunction(){
+		
+		var myVar="지역변수",index=0;
+		count = 10; // 선언하지 않은 변수에 값을 대입하면 자동으로 전역변수로 선언됌
+		
+		console.log("myVar : "+myVar);
+		console.log("index : "+index);
+	}
+	
+	Myfunction();
+	
+	console.log("myVar : "+myVar);
+	console.log("Count : "+count);
+	/* console.log("index : "+index); */
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

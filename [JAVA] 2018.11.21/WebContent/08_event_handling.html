@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Hihandler() {
+		alert('Hi');
+		console.log('hi')
+	}
+	
+	function init(){
+		var first = document.getElementById("first");
+		var second = document.getElementById("second");
+		
+		/* first.onclick = Hihandler();
+		second.onclick = Hihandler(); */
+		
+		first.addEventListener("click",Hihandler);
+		first.addEventListener("click",function(){
+			document.getElementById("second").style.border="1px solid red";
+		});
+	}
+	
+	window.onload = init;
+</script>
+</head>
+<body>
+	<h1 onclick="Hihandler();">테스트</h1>
+	<h1 onclick="Hihandler();">안녕</h1>
+
+	<h1 id="first">테스트2</h1>
+	<h1 id="second">안녕2</h1>
+
+</html>

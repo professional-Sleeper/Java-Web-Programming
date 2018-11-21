@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript">
+	function sumAll(){
+		//console.log(arguments.length);
+		var result = 0;
+		for (var i=0; i<arguments.length; i++){
+			result += arguments[i];
+			
+		}
+		return result;
+	}
+	
+	function myFunc(value1,value2) {
+		console.log(value1+"/"+value2);
+
+	}
+	
+
+	
+	function process(){
+	 	function big(x,y) {
+			if(x<y) return y;
+			else return x;
+		} 
+		console.log(big(10,20));
+		
+	}
+	
+	function display(viewHandler){
+		var result = "Hello";
+		viewHandler(result);
+	}
+	
+
+	
+</script>
+</head>
+<body>
+	<h1 id="result" style="width:300px; height:50px; border:1px solid red"></h1>
+	<script type="text/javascript">
+		display(function(result) {
+			alert(result);
+		});
+		
+		display(function(result) {
+			document.getElementById("result").innerHTML = result;
+		});
+	</script>
+</body>
+</html>
